@@ -6,7 +6,7 @@ type Props = {
 };
 
 export const Nav = (props: Props) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState<boolean>(false);
   useEffect(() => {
     const handleShow = () => {
       if (window.scrollY > 100) {
